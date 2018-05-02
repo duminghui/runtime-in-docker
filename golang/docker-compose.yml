@@ -1,0 +1,10 @@
+version: '3.6'
+
+services:
+    go-runtime:
+        image: go-runtime:1.10.1-alpine3.7
+        build:
+            context: .
+        container_name: go-runtime
+        hostname: go-runtime
+        command: tail -f /root/.bashrc
