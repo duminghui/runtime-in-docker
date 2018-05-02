@@ -7,4 +7,10 @@ services:
             context: .
         container_name: go-runtime
         hostname: go-runtime
-        command: tail -f /root/.bashrc
+        tty: true
+        networks:
+            - go-runtime
+
+networks:
+    go-runtime:
+        driver: bridge

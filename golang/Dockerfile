@@ -8,6 +8,6 @@ RUN \
     rm -rf /var/cache/apk/*
 
 COPY bashrc /root/.bashrc
-CMD 'bash'
+CMD ["bash"]
 
 
